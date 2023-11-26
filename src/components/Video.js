@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import './Video.css';
+import VideoFooter from './VideoFooter';
 const Video = () => {
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef(null);
@@ -21,6 +22,7 @@ const Video = () => {
         ref={videoRef}
         onClick={handleVideoPress}
       ></video>
+      <VideoFooter />
     </div>
   );
 };
