@@ -10,6 +10,7 @@ const VideoFooter = () => {
         <p>Macbook Air to new Windows editing beast</p>
         <div className="videoFooter__ticker">
           <MusicNoteIcon className="videoFooter__icon" />
+          {/*Causava bug na renderização com react-dom >= 18 por isso npm install react@17.0.2 react-dom@17.0.2*/}
           <Ticker mode="smooth">
             {({ index }) => (
               <>
