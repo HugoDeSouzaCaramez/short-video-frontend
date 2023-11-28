@@ -17,7 +17,7 @@ const VideoSidebar = ({ likes, shares, messages }) => {
             onClick={(e) => setLiked(true)}
           />
         )}
-        <p>{liked ? likes + 1 : likes}</p>
+        <p>{liked ? +likes + 1 : likes}</p>
       </div>
       <div className="videoSidebar__button">
         <MessageIcon fontSize="large" />
