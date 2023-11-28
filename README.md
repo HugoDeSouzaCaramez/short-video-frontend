@@ -1,3 +1,98 @@
+<p>
+Deploy no firebase
+
+firebase init
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+C:\Users\Hugo\Documents\GitHub\short-video-mern\short-video-frontend
+
+Before we get started, keep in mind:
+
+- You are initializing within an existing Firebase project directory
+
+? Are you ready to proceed? Yes
+? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm
+your choices. Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+i Using project short-videos-frontend (short-videos-frontend)
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory? build
+? Configure as a single-page app (rewrite all urls to /index.html)? Yes
+? Set up automatic builds and deploys with GitHub? No
+? File build/index.html already exists. Overwrite? Yes
+
+- Wrote build/index.html
+
+i Writing configuration info to firebase.json...
+i Writing project information to .firebaserc...
+
+- Firebase initialization complete!
+  npm run build
+
+> short-video-frontend@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+Compiled successfully.
+
+File sizes after gzip:
+
+78.69 kB build\static\js\main.faecb8c9.js
+747 B (-1 B) build\static\css\main.07af7d9a.css
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+
+npm install -g serve
+serve -s build
+
+Find out more about deployment here:
+
+https://cra.link/deployment
+
+firebase deploy
+
+=== Deploying to 'short-videos-frontend'...
+
+i deploying hosting
+i hosting[short-videos-frontend]: beginning deploy...
+i hosting[short-videos-frontend]: found 12 files in build
+
+- hosting[short-videos-frontend]: file upload complete
+  i hosting[short-videos-frontend]: finalizing version...
+- hosting[short-videos-frontend]: version finalized
+  i hosting[short-videos-frontend]: releasing new version...
+- hosting[short-videos-frontend]: release complete
+
+- Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/short-videos-frontend/overview
+Hosting URL: https://short-videos-frontend.web.app
+PS C:\Users\Hugo\Documents\GitHub\short-video-mern\short-video-frontend>
+
+</p>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
